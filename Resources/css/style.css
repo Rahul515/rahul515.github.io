@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -34,6 +35,7 @@ input[type=submit] {
     color: #51a7e0;
     border: 2px solid #51a7e0;
     border-radius: 200px;
+    -webkit-transition: background-color 0.5s, color 0.5s, border 0.5s;
     transition: background-color 0.5s, color 0.5s, border 0.5s;
 }
 
@@ -66,6 +68,7 @@ SOCIAL ICONS
 .ion-social-github,
 .ion-social-linkedin,
 .ion-social-instagram {
+    -webkit-transition: color 0.7s;
     transition: color 0.7s;
 }
 
@@ -179,6 +182,7 @@ NAVIGATOR
     font-weight: 300;
     padding: 10px;
     border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.3s;
     transition: border-bottom 0.3s;
 }
 
@@ -206,6 +210,7 @@ NAVIGATOR
     top: 0;
     width: 100%;
     background-color: rgba(255, 255, 255, 0.75);
+    -webkit-box-shadow: 0 2px 2px #efefef;
     box-shadow: 0 2px 2px #efefef;
     z-index: 9999;
 }
@@ -223,6 +228,7 @@ NAVIGATOR
 HEADER SECTION
 *****************/
 header {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.45)), to(rgba(0, 0, 0, 0.45))), url(img/hero-5.jpg);
     background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(img/hero-5.jpg);
     background-size: cover;
     background-attachment: fixed;
@@ -243,6 +249,7 @@ header {
     position: absolute;
     top: 60%;
     left: 50%;
+    -webkit-transform: translate(-50%,-50%);
     transform: translate(-50%,-50%);
 }
 
@@ -286,6 +293,7 @@ ABOUT ME
 SKILLS
 *****************/
 .section-skills {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.45)), to(rgba(0, 0, 0, 0.45))), url(img/skills-image.jpg);
     background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(img/skills-image.jpg);
     background-size: cover;
     background-attachment: fixed;
@@ -304,12 +312,16 @@ SKILLS
 */
 
 .section-skills i {
+    -webkit-transition: -webkit-transform 0.7s;
+    transition: -webkit-transform 0.7s;
     transition: transform 0.7s;
+    transition: transform 0.7s, -webkit-transform 0.7s;
     color: #3498db;
     font-size: 65px;
 }
 
 .section-skills i:hover {
+    -webkit-transform: scale(1.20);
     transform: scale(1.20);
 }
 
@@ -335,8 +347,14 @@ PROJECTS
 
 .project-rows {
     margin-bottom: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -345,10 +363,14 @@ PROJECTS
 }
 
 .project-rows {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 33%;
     flex: 0 0 33%;
 }
 
 .project-detail {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 67%;
     flex: 0 0 67%;
 }
 
