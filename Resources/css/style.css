@@ -228,8 +228,8 @@ NAVIGATOR
 HEADER SECTION
 *****************/
 header {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.45)), to(rgba(0, 0, 0, 0.45))), url(img/hero-5.jpg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(img/hero-5.jpg);
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.45)), to(rgba(0, 0, 0, 0.45))), url(img/hero-5.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(img/hero-5.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -293,8 +293,8 @@ ABOUT ME
 SKILLS
 *****************/
 .section-skills {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.45)), to(rgba(0, 0, 0, 0.45))), url(img/skills-image.jpg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(img/skills-image.jpg);
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.45)), to(rgba(0, 0, 0, 0.45))), url(img/skills-image.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(img/skills-image.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -333,10 +333,6 @@ PROJECTS
     background-color: #fff;
 }
 
-.section-projects h3{
-    color: #4d4d4d;
-}
-
 .section-projects img {
     display: block;
     height: 150px;
@@ -356,16 +352,13 @@ PROJECTS
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 33%;
+    flex: 0 0 33%;
 }
 
 .project-rows:first-of-type {
     margin-top: 100px;
-}
-
-.project-rows {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 33%;
-    flex: 0 0 33%;
 }
 
 .project-detail {
@@ -374,11 +367,12 @@ PROJECTS
     flex: 0 0 67%;
 }
 
-.project-rows h3 {
+.header-subclass {
     color: #2487c9;
+    float: none
 }
 
-.project-rows h3:after {
+.header-subclass:after {
     display: block;
     height: 1px;
     width: 200px;
@@ -395,7 +389,17 @@ EXPERIENCE
 }
 
 .section-experience img {
-    height: 150px;
+    height: 100px;
+}
+
+.image {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.exp-paras {
+    width: 70%;
+    margin-left: 15%;
 }
 
 /********************************
