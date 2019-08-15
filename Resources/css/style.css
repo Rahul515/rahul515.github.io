@@ -237,7 +237,7 @@ header {
 }   
 
 .header-text h1 {
-    font-family: "Copperplate Gothic Light";
+    font-family: "Copperplate Gothic Light", 'Alegreya Sans SC';
     color: #fff;
     font-size: 300%;
     margin-bottom: 50px;
