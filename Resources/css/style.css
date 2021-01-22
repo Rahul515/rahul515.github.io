@@ -209,19 +209,19 @@ NAVIGATOR
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.75);
+    background-color: rgba(255, 255, 255, 0.5);
     -webkit-box-shadow: 0 2px 2px #efefef;
-    box-shadow: 0 2px 2px #efefef;
+    box-shadow: 0 2px 2px #888888;
     z-index: 9999;
 }
 
 .sticky .main-nav li a:link, 
 .sticky .main-nav li a:visited {
-    color: #4d4d4d;
+    color: rgb(24, 24, 24);
     padding: 15px 0;
 }
 
-.sticky .main-nav { margin: 25px 0; }
+.sticky .main-nav { margin: 15px 0; }
 
 
 /****************
@@ -330,12 +330,25 @@ SKILLS
 PROJECTS
 *****************/
 .section-projects {
-    background-color: #fff;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.45)), to(rgba(0, 0, 0, 0.45))), url(img/skills-image.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(img/skills-image.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.section-projects h2 {
+    color: #dadada;
+}
+
+.section-projects p {
+    color: #b7b7b7;
 }
 
 .section-projects img {
     display: block;
-    height: 150px;
+    /* height: 150px; */
+    width: 150px;
     text-align: right;
     margin-left: 10px;
     margin-bottom: 30px;
@@ -376,7 +389,7 @@ PROJECTS
     display: block;
     height: 1px;
     width: 200px;
-    background-color: #000;
+    background-color: #adadad;
     content: "";
     margin: 10px auto;
 }
